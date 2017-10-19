@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Validation</title>
+	<script type="text/javascript" src="validation_script.js"></script>
+	<style>
+		body {
+		   		background-color: black;
+		   		color: white;
+		   		font-style: oblique;
+			}	
+		button{
+			font: italic bold 15px/20px Georgia, serif;
+		}
+	</style>
+</head>
+<body onload="loadPattern()">
+	<h2>Login Page</h2><br><br>
+	<label>Username :</label>
+	<input type="text" name="name" id="name"><br><br>
+	<label>Password :</label>
+	<input type="password" name="password" id= "password" onkeypress="validationFrom()"><br><br>
+	<label>Password pattern :</label> <span id="pattern"></span><br><br>
+	<p>NOTE : Passward should contain special character [! " # $ % &] , Uppercase, Lowercase and Number</p>
+	<button type="button" id= "submit" onclick ="validationEmply()">Submit</button>
+	 
+</body>
+</html>
+
+
